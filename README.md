@@ -11,12 +11,14 @@ You can pull directly the image from docker or build it :
 
 ```
 docker pull pixhub/ansible
+```
 
 ### Buildinf it from Git
 
 ```
 git clone https://github.com/pixhub/docker_ansible
 docker build -t some-name docker_ansible
+```
 
 ## Running it Forwarding your SSH HostKey
 
