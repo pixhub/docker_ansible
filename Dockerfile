@@ -10,6 +10,7 @@ RUN apt-get update && \
             openssh-client && \
     echo "    StrictHostKeyChecking no" >> /etc/ssh/ssh_config && \
     echo "    UserKnownHostsFile=/dev/null" >> /etc/ssh/ssh_config && \
+    mkdir /ansible && \
     echo "[defaults]" >> /ansible/ansible.cfg && \
     echo "roles_path = /ansible/roles" >> /ansible/ansible.cfg && \
     pip2 install ansible==$ANSIBLE_VERSION
